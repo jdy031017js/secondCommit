@@ -1,0 +1,123 @@
+body {
+    background-image: url('Bimg.jpg'); /* 이미지 경로를 실제 이미지가 저장된 경로로 변경 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px; /* 높이 설정 */
+    margin: 0; /* body의 기본 margin 제거 */
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(10, 13, 21, 0.8); /* 배경색을 흰색으로 설정하고 투명도를 조절 */
+  }
+  
+  .container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* 부모 요소의 높이를 100%로 설정 */
+    padding: 300px;
+    
+  }
+
+  .left-link {
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    margin-right: 20px;
+    text-decoration: none; /* 텍스트에 밑줄 제거 */
+  }
+
+  .right-links {
+    font-size: 1em;
+    color: rgb(148, 148, 225);
+    text-align: right;
+    margin-left: 20px;
+  }
+
+  .right-links a {
+    font-size: 1em;
+    margin-left: 20px;
+    margin-right: 50px;
+    text-decoration: none;
+  }
+
+  .main-text {
+    color: #fff;
+    font-size: 2.2em;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 3px; 
+    margin-bottom: 100px;
+    margin-top: 150px;
+  }
+
+  .subtitle-text {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 300px;
+    margin-top: 20px;
+  }
+
+  .main-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .memo {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: left;
+  }
+
+  /* 기존 스타일 유지 */
+
+.signup-form {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .signup-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(89, 89, 232);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Text Links with Background</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="left-link">
+      <!-- 왼쪽에 위치한 링크 -->
+      <a href="#YOU AND I" style="font-weight: bold; text-decoration: none; color:white; font-size: 0.7em; font-weight: bold; padding: 40px;">YOU AND I</a>
+    </div>
+
+    <div class="right-links">
+      <!-- 오른쪽에 위치한 링크들 -->
+      <a href="#LOGIN" style="text-decoration: none; color: rgb(89, 89, 232); font-size: 1.3em; margin-right: 50px;">LOGIN</a>
+      <a href="#MYHOME" style="text-decoration: none; color: rgb(89, 89, 232); font-size: 1.3em; margin-right: 50px;">MYHOME</a>
+    </div>
+
+  </div>
+
+  <div class="container2">
+    <div class="main-text">
+      <!-- 부제목 텍스트 -->
+      "일상의 작은 순간들, 랜덤으로 만나는 아름다움."
+    <div class="subtitle-text">
+      <!-- 메인 텍스트 -->
+      일상의 아름다움
+    </div>
+    
+    </div>
+    <img src="your-image-path.jpg" alt="Main Image" width="300">
+    <div class="main-title">
+      <!-- 메인 타이틀 -->
+      MYHOME
+    </div>
+    <div class="memo" contenteditable="true">
+      <!-- 메모장 기능 -->
+      Start typing here...
+    </div>
+
+    <!-- 게시글 목록 추가 -->
+    <div class="post-section">
+      <h2>게시글</h2>
+      <ul id="post-list">
+        <!-- 여기에 JavaScript로 동적으로 게시글이 추가됩니다. -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- 회원가입 폼 추가 -->
+  <form class="signup-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" required>
+
+    <button type="submit">Sign Up</button>
+
+  </form>
+
+  <script>
+    // 간단한 JavaScript로 게시글 목록을 생성 (실제로는 서버에서 가져와야 함)
+    const postList = document.getElementById('post-list');
+
+    // 예시 게시글 데이터
+    const posts = [
+      '첫 번째 게시글',
+      '두 번째 게시글',
+      '세 번째 게시글',
+    ];
+
+    // 게시글 목록에 추가
+    posts.forEach(post => {
+      const listItem = document.createElement('li');
+      listItem.textContent = post;
+      postList.appendChild(listItem);
+    });
+  </script>
+</body>
+</html>
